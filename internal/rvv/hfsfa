@@ -1,0 +1,2046 @@
+{
+   "parameters": [
+      {
+         "name": "serverID",
+         "value": "DEF-EFA-BAY01-P"
+      },
+      {
+         "name": "requestID",
+         "value": "0"
+      },
+      {
+         "name": "sessionID",
+         "value": "0"
+      },
+      {
+         "name": "calcTime",
+         "value": "1671.353"
+      },
+      {
+         "name": "serverTime",
+         "value": "2024-01-28T15:45:45"
+      }
+   ],
+   "dm": {
+      "input": {
+         "input": "TechCampus/OTH"
+      },
+      "points": {
+         "point": {
+            "usage": "dm",
+            "type": "any",
+            "name": "Regensburg, TechCampus/OTH",
+            "stateless": "4014030",
+            "anyType": "stop",
+            "sort": "2",
+            "quality": "100000",
+            "best": "1",
+            "object": "TechCampus/OTH",
+            "ref": {
+               "id": "4014030",
+               "gid": "de:09362:14030",
+               "omc": "9362000",
+               "placeID": "1",
+               "place": "Regensburg",
+               "coords": "1346879.00000,5724747.00000"
+            },
+            "infos": null
+         }
+      },
+      "itdOdvAssignedStops": {
+         "stopID": "4014030",
+         "name": "TechCampus/OTH",
+         "x": "1346879",
+         "y": "5724747",
+         "mapName": "MRCV",
+         "value": "4014030:TechCampus/OTH",
+         "place": "Regensburg",
+         "nameWithPlace": "TechCampus/OTH",
+         "distanceTime": "0",
+         "isTransferStop": "0",
+         "vm": "100",
+         "gid": "de:09362:14030"
+      }
+   },
+   "arr": {
+      "input": {
+         "input": ""
+      },
+      "points": null
+   },
+   "dateTime": {
+      "deparr": "dep",
+      "ttpFrom": "20240107",
+      "ttpTo": "20241214",
+      "year": "2024",
+      "month": "1",
+      "day": "28",
+      "hour": "15",
+      "minute": "45"
+   },
+   "dateRange": [
+      {
+         "day": "28",
+         "month": "01",
+         "year": "2024",
+         "weekday": "1"
+      },
+      {
+         "day": "29",
+         "month": "01",
+         "year": "2024",
+         "weekday": "2"
+      },
+      {
+         "day": "30",
+         "month": "01",
+         "year": "2024",
+         "weekday": "3"
+      },
+      {
+         "day": "31",
+         "month": "01",
+         "year": "2024",
+         "weekday": "4"
+      },
+      {
+         "day": "01",
+         "month": "02",
+         "year": "2024",
+         "weekday": "5"
+      },
+      {
+         "day": "02",
+         "month": "02",
+         "year": "2024",
+         "weekday": "6"
+      },
+      {
+         "day": "03",
+         "month": "02",
+         "year": "2024",
+         "weekday": "7"
+      },
+      {
+         "day": "04",
+         "month": "02",
+         "year": "2024",
+         "weekday": "1"
+      },
+      {
+         "day": "05",
+         "month": "02",
+         "year": "2024",
+         "weekday": "2"
+      },
+      {
+         "day": "06",
+         "month": "02",
+         "year": "2024",
+         "weekday": "3"
+      },
+      {
+         "day": "07",
+         "month": "02",
+         "year": "2024",
+         "weekday": "4"
+      },
+      {
+         "day": "08",
+         "month": "02",
+         "year": "2024",
+         "weekday": "5"
+      },
+      {
+         "day": "09",
+         "month": "02",
+         "year": "2024",
+         "weekday": "6"
+      },
+      {
+         "day": "10",
+         "month": "02",
+         "year": "2024",
+         "weekday": "7"
+      },
+      {
+         "day": "11",
+         "month": "02",
+         "year": "2024",
+         "weekday": "1"
+      },
+      {
+         "day": "12",
+         "month": "02",
+         "year": "2024",
+         "weekday": "2"
+      },
+      {
+         "day": "13",
+         "month": "02",
+         "year": "2024",
+         "weekday": "3"
+      },
+      {
+         "day": "14",
+         "month": "02",
+         "year": "2024",
+         "weekday": "4"
+      },
+      {
+         "day": "15",
+         "month": "02",
+         "year": "2024",
+         "weekday": "5"
+      },
+      {
+         "day": "16",
+         "month": "02",
+         "year": "2024",
+         "weekday": "6"
+      },
+      {
+         "day": "17",
+         "month": "02",
+         "year": "2024",
+         "weekday": "7"
+      },
+      {
+         "day": "18",
+         "month": "02",
+         "year": "2024",
+         "weekday": "1"
+      },
+      {
+         "day": "19",
+         "month": "02",
+         "year": "2024",
+         "weekday": "2"
+      },
+      {
+         "day": "20",
+         "month": "02",
+         "year": "2024",
+         "weekday": "3"
+      },
+      {
+         "day": "21",
+         "month": "02",
+         "year": "2024",
+         "weekday": "4"
+      },
+      {
+         "day": "22",
+         "month": "02",
+         "year": "2024",
+         "weekday": "5"
+      },
+      {
+         "day": "23",
+         "month": "02",
+         "year": "2024",
+         "weekday": "6"
+      },
+      {
+         "day": "24",
+         "month": "02",
+         "year": "2024",
+         "weekday": "7"
+      },
+      {
+         "day": "25",
+         "month": "02",
+         "year": "2024",
+         "weekday": "1"
+      },
+      {
+         "day": "26",
+         "month": "02",
+         "year": "2024",
+         "weekday": "2"
+      }
+   ],
+   "option": {
+      "ptOption": {
+         "active": "-1",
+         "maxChanges": "5",
+         "maxTime": "360",
+         "maxWait": "120",
+         "routeType": "LEASTTIME",
+         "changeSpeed": "normal",
+         "lineRestriction": "400",
+         "useProxFootSearch": "0",
+         "useProxFootSearchOrigin": "0",
+         "useProxFootSearchDestination": "0",
+         "bike": "0",
+         "plane": "0",
+         "noCrowded": "0",
+         "noSolidStairs": "0",
+         "noEscalators": "0",
+         "noElevators": "0",
+         "lowPlatformVhcl": "0",
+         "wheelchair": "0",
+         "needElevatedPlt": "0",
+         "assistance": "0",
+         "SOSAvail": "0",
+         "noLonelyTransfer": "0",
+         "illumTransfer": "0",
+         "overgroundTransfer": "0",
+         "noInsecurePlaces": "0",
+         "privateTransport": "0",
+         "excludedMeans": [
+            {
+               "means": "Train",
+               "value": "0",
+               "selected": "0"
+            },
+            {
+               "means": "Commuter railway",
+               "value": "1",
+               "selected": "0"
+            },
+            {
+               "means": "Subway",
+               "value": "2",
+               "selected": "0"
+            },
+            {
+               "means": "City rail",
+               "value": "3",
+               "selected": "0"
+            },
+            {
+               "means": "Tram",
+               "value": "4",
+               "selected": "0"
+            },
+            {
+               "means": "Bus",
+               "value": "5",
+               "selected": "0"
+            },
+            {
+               "means": "Regional bus",
+               "value": "6",
+               "selected": "0"
+            },
+            {
+               "means": "Express bus",
+               "value": "7",
+               "selected": "0"
+            },
+            {
+               "means": "Cable car/Rack railw",
+               "value": "8",
+               "selected": "0"
+            },
+            {
+               "means": "Ferry",
+               "value": "9",
+               "selected": "0"
+            },
+            {
+               "means": "DRT (area-bound)",
+               "value": "10",
+               "selected": "0"
+            },
+            {
+               "means": "Other",
+               "value": "11",
+               "selected": "0"
+            },
+            {
+               "means": "Airplane",
+               "value": "12",
+               "selected": "0"
+            },
+            {
+               "means": "Train (local)",
+               "value": "13",
+               "selected": "0"
+            },
+            {
+               "means": "Train (intercity)",
+               "value": "14",
+               "selected": "0"
+            },
+            {
+               "means": "Zug Fernv m Zuschlag",
+               "value": "15",
+               "selected": "0"
+            },
+            {
+               "means": "Zug Fernv m spez Fpr",
+               "value": "16",
+               "selected": "0"
+            },
+            {
+               "means": "SEV Schienenersatzv",
+               "value": "17",
+               "selected": "0"
+            },
+            {
+               "means": "Rail shuttle",
+               "value": "18",
+               "selected": "0"
+            },
+            {
+               "means": "Peoples bus",
+               "value": "19",
+               "selected": "0"
+            }
+         ],
+         "activeImp": "-1",
+         "activeCom": "-1",
+         "activeSec": "-1"
+      }
+   },
+   "servingLines": {
+      "lines": [
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 5",
+               "number": "5",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Weichs/DEZ",
+               "destID": "4012081",
+               "desc": "Fahrplanauszug für den Streckenabschnitt P+R Jahnstadion und Donaustauf P+R Jahnstadion - Hauptbahnhof  - Weichs/DEZ - Gewerbepark - Schwabelweis - Donaustauf",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "11005",
+                  "supplement": " ",
+                  "dir": "H",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:11005: :H:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:0"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 5",
+               "number": "5",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Schwabenstraße",
+               "destID": "4014075",
+               "desc": "Fahrplanauszug für den Streckenabschnitt Donaustauf und P+R Jahnstadion Donaustauf - Schwabelweis - Gewerbepark - Weichs/DEZ- Hauptbahnhof - P+R Jahnstadion",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "11005",
+                  "supplement": " ",
+                  "dir": "R",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:11005: :R:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:1"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 6",
+               "number": "6",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Klinikum",
+               "destID": "4014052",
+               "desc": "Roter-Brach-Weg - Clermont-Ferrand-Allee - Bismarckplatz Hauptbahnhof - Universität - Klinikum",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "11006",
+                  "supplement": " ",
+                  "dir": "H",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:11006: :H:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:2"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 6",
+               "number": "6",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Roter-Brach-Weg",
+               "destID": "4000718",
+               "desc": "Klinikum - Universität - Hauptbahnhof Bismarckplatz - Clermont-Ferrand-Allee - Roter-Brach-Weg",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "11006",
+                  "supplement": " ",
+                  "dir": "R",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:11006: :R:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:3"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie C6",
+               "number": "C6",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Universität",
+               "destID": "4014080",
+               "desc": "campusLINIE Hauptbahnhof - TechCampus/OTH - Uni",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "110C6",
+                  "supplement": " ",
+                  "dir": "H",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:110C6: :H:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:4"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie C6",
+               "number": "C6",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "5",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "campusLINIE UNI - TechCampus/OTH - Hauptbahnhof",
+               "timetablePeriod": "Jahresfahrplan 2024",
+               "diva": {
+                  "branch": "11",
+                  "line": "110C6",
+                  "supplement": " ",
+                  "dir": "R",
+                  "project": "j24",
+                  "network": "rvv",
+                  "stateless": "rvv:110C6: :R:j24",
+                  "globalId": "null",
+                  "tripCode": "0",
+                  "operator": "Betrieb",
+                  "opPublicCode": "1",
+                  "opCode": "1",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "5:5"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 19",
+               "number": "19",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "Teugn - Lengfeld - Bad Abbach - Großberg - Pentling - Regensburg Klinikum - Universität - Hauptbahnhof",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12019",
+                  "supplement": " ",
+                  "dir": "H",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12019: :H:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:0"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 19",
+               "number": "19",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Lengfeld, Deutenhof",
+               "destID": "4103989",
+               "desc": "Regensburg Hauptbahnhof - Universität - Klinikum - Pentling - Großberg - Bad Abbach - Lengfeld - Teugn",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12019",
+                  "supplement": " ",
+                  "dir": "R",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12019: :R:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:1"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 20",
+               "number": "20",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "Luckenpaint - Thalmassing - Gebelkofen - Obertraubling - Regensburg Otto-Hahn-Straße (Uni) - Hauptbahnhof",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12020",
+                  "supplement": "e",
+                  "dir": "H",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12020:e:H:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:2"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 20",
+               "number": "20",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Luckenpaint",
+               "destID": "94300290",
+               "desc": "Regensburg Hauptbahnhof - Otto-Hahn-Straße (Uni) - Obertraubling - Gebelkofen - Thalmassing - Luckenpaint",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12020",
+                  "supplement": "e",
+                  "dir": "R",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12020:e:R:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:3"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 21",
+               "number": "21",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "Petzkofen - Aufhausen - Alteglofsheim - Obertraubling - Oberhinkofen - Regensburg Otto-Hahn-Str. (Uni) - Hauptbahnhof Petzkofen - Aufhausen - Pfakofen - Alteglofsheim - Obertraubling - Oberhinkofen - Regensburg Otto-Hahn-Str. (Uni) - Hauptbahnhof gültig ab 04. November 2013 (nur EFA) gültig ab 04. November 2013 (nur EFA)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12021",
+                  "supplement": "e",
+                  "dir": "H",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12021:e:H:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:4"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 21/24",
+               "number": "21/24",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "Petzkofen - Aufhausen - Alteglofsheim - Obertraubling - Oberhinkofen - Regensburg Otto-Hahn-Str. (Uni) - Hauptbahnhof Petzkofen - Aufhausen - Pfakofen - Alteglofsheim - Obertraubling - Oberhinkofen - Regensburg Otto-Hahn-Str. (Uni) - Hauptbahnhof gültig ab 04. November 2013 (nur EFA) gültig ab 04. November 2013 (nur EFA)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12214",
+                  "supplement": "e",
+                  "dir": "H",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12214:e:H:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:5"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 21",
+               "number": "21",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Petzkofen Wendeplatz",
+               "destID": "94300366",
+               "desc": "Regensburg Hauptbahnhof - Otto-Hahn-Str. (Uni) - Oberhinkofen - Obertraulbling - Alteglofsheim - Aufhausen - Petzkofen Regensburg Hauptbahnhof - Otto-Hahn-Str. (Uni) - Oberhinkofen - Obertraulbling - Alteglofsheim -  Petzkofen - Aufhausen - Pfakofen gültig ab 04. November 2013 (nur EFA) gültig ab 04. November 2013 (nur EFA)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12021",
+                  "supplement": "e",
+                  "dir": "R",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12021:e:R:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:6"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 21/24",
+               "number": "21/24",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Pfakofen via Aufhausen",
+               "destID": "94300268",
+               "desc": "Regensburg Hauptbahnhof - Otto-Hahn-Str. (Uni) - Oberhinkofen - Obertraulbling - Alteglofsheim - Aufhausen - Petzkofen Regensburg Hauptbahnhof - Otto-Hahn-Str. (Uni) - Oberhinkofen - Obertraulbling - Alteglofsheim -  Petzkofen - Aufhausen - Pfakofen gültig ab 04. November 2013 (nur EFA) gültig ab 04. November 2013 (nur EFA)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12214",
+                  "supplement": "e",
+                  "dir": "R",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12214:e:R:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:7"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 38",
+               "number": "38",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Barbing West",
+               "destID": "94313051",
+               "desc": "Rgbg HBF - Burgweinting - Neutraubling - Barbing (L 31) Rgbg HBF - TechCampus/OTH - Neutraubling - Barbing (L 38)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12038",
+                  "supplement": "e",
+                  "dir": "H",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12038:e:H:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:8"
+         },
+         {
+            "mode": {
+               "name": "RVV-Bus-Linie 38",
+               "number": "38",
+               "product": "RVV-Bus-Linie",
+               "productId": "0",
+               "type": "6",
+               "code": "3",
+               "destination": "Regensburg Hbf",
+               "destID": "80001083",
+               "desc": "Barbing - Neutraubling - Burgweinting - Rgbg HBF (L 31) Barbing - Neutraubling - TechCampus/OTH - Rgbg HBF (L 38)",
+               "timetablePeriod": "Schuljahr 2023/2024",
+               "diva": {
+                  "branch": "12",
+                  "line": "12038",
+                  "supplement": "e",
+                  "dir": "R",
+                  "project": "23j",
+                  "network": "gfn",
+                  "stateless": "gfn:12038:e:R:23j",
+                  "tripCode": "0",
+                  "operator": "",
+                  "opCode": "",
+                  "vF": "20240107",
+                  "vTo": "20241214",
+                  "lineDisplay": "line",
+                  "attrs": []
+               }
+            },
+            "index": "6:9"
+         }
+      ]
+   },
+   "departureList": [
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "14",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "15",
+            "minute": "51"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "15",
+            "minute": "59"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "184",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3816",
+            "name": "RVV-Bus-Linie",
+            "delay": "8",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "7240-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "6",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "15",
+            "minute": "51"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "15",
+            "minute": "51"
+         },
+         "realtimeStatus": "EXTRA_TRIP",
+         "realtimeTripStatus": "EXTRA_TRIP|MONITORED",
+         "servingLine": {
+            "key": "65534",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "name": "BUS",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "7240-00075-2"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "19",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "4"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "4"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "351",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3734",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "34094-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "36",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "21"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "21"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "185",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3817",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "8594-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "49",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "34"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "34"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "352",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3735",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "13090-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "66",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "51"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "51"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "186",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3818",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "34097-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "69",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "54"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "16",
+            "minute": "54"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "30",
+            "code": "3",
+            "number": "21/24",
+            "symbol": "21/24",
+            "motType": "6",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Regensburg Hbf",
+            "directionFrom": "Langenerling Abzw. Hagelstadt",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "12214",
+               "project": "23j",
+               "direction": "H",
+               "supplement": "e",
+               "network": "gfn"
+            },
+            "destID": "80001083",
+            "stateless": "gfn:12214:e:H:23j",
+            "lineDisplay": "line"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "GFN21509#!ADD!#STBA#"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "79",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "4"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "4"
+         },
+         "realtimeStatus": "EXTRA_TRIP",
+         "realtimeTripStatus": "EXTRA_TRIP|MONITORED",
+         "servingLine": {
+            "key": "65534",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "name": "BUS",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "7241-00075-2"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "79",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "4"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "4"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "353",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3736",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "7241-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "94",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "19"
+         },
+         "servingLine": {
+            "key": "10",
+            "code": "3",
+            "number": "21/24",
+            "symbol": "21/24",
+            "motType": "6",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Pfakofen via Aufhausen",
+            "directionFrom": "Regensburg Hbf",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "12214",
+               "project": "23j",
+               "direction": "R",
+               "supplement": "e",
+               "network": "gfn"
+            },
+            "destID": "94300268",
+            "stateless": "gfn:12214:e:R:23j",
+            "lineDisplay": "line"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "GFN21510#!ADD!#STBA#"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "96",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "21"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "21"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "187",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3819",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "13091-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "109",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "34"
+         },
+         "realDateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "34"
+         },
+         "realtimeTripStatus": "MONITORED",
+         "servingLine": {
+            "key": "354",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "1",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3737",
+            "name": "RVV-Bus-Linie",
+            "delay": "0",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         },
+         "attrs": [
+            {
+               "name": "AVMSTripID",
+               "value": "8595-00075-1"
+            }
+         ]
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "128",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "17",
+            "minute": "53"
+         },
+         "servingLine": {
+            "key": "188",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3820",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "139",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "18",
+            "minute": "4"
+         },
+         "servingLine": {
+            "key": "355",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3738",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "158",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "18",
+            "minute": "23"
+         },
+         "servingLine": {
+            "key": "189",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3821",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "169",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "18",
+            "minute": "34"
+         },
+         "servingLine": {
+            "key": "356",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3739",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "188",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "18",
+            "minute": "53"
+         },
+         "servingLine": {
+            "key": "190",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Roter-Brach-Weg",
+            "directionFrom": "Klinikum",
+            "trainNum": "3822",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "R",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4000718",
+            "stateless": "rvv:11006: :R:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346896",
+         "y": "5724703",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "2",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "189",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "18",
+            "minute": "54"
+         },
+         "servingLine": {
+            "key": "32",
+            "code": "3",
+            "number": "21/24",
+            "symbol": "21/24",
+            "motType": "6",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Regensburg Hbf",
+            "directionFrom": "Langenerling Abzw. Hagelstadt",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "12214",
+               "project": "23j",
+               "direction": "H",
+               "supplement": "e",
+               "network": "gfn"
+            },
+            "destID": "80001083",
+            "stateless": "gfn:12214:e:H:23j",
+            "lineDisplay": "line"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "199",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "19",
+            "minute": "4"
+         },
+         "servingLine": {
+            "key": "357",
+            "code": "3",
+            "number": "6",
+            "symbol": "6",
+            "motType": "5",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Klinikum",
+            "directionFrom": "Roter-Brach-Weg",
+            "trainNum": "3740",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "11006",
+               "project": "j24",
+               "direction": "H",
+               "supplement": " ",
+               "network": "rvv",
+               "gid": "null"
+            },
+            "destID": "4014052",
+            "stateless": "rvv:11006: :H:j24",
+            "lineDisplay": "line"
+         },
+         "operator": {
+            "code": "1",
+            "name": "Betrieb",
+            "publicCode": "1"
+         }
+      },
+      {
+         "stopID": "4014030",
+         "x": "1346863",
+         "y": "5724790",
+         "mapName": "MRCV",
+         "area": "0",
+         "platform": "1",
+         "platformName": "",
+         "stopName": "TechCampus/OTH",
+         "nameWO": "TechCampus/OTH",
+         "countdown": "214",
+         "dateTime": {
+            "year": "2024",
+            "month": "1",
+            "day": "28",
+            "weekday": "1",
+            "hour": "19",
+            "minute": "19"
+         },
+         "servingLine": {
+            "key": "15",
+            "code": "3",
+            "number": "21/24",
+            "symbol": "21/24",
+            "motType": "6",
+            "mtSubcode": "0",
+            "realtime": "0",
+            "direction": "Pfakofen via Aufhausen",
+            "directionFrom": "Regensburg Hbf",
+            "name": "RVV-Bus-Linie",
+            "liErgRiProj": {
+               "line": "12214",
+               "project": "23j",
+               "direction": "R",
+               "supplement": "e",
+               "network": "gfn"
+            },
+            "destID": "94300370",
+            "stateless": "gfn:12214:e:R:23j",
+            "lineDisplay": "line"
+         }
+      }
+   ]
+}
