@@ -12,13 +12,6 @@ import (
 	"golang.org/x/text/transform"
 )
 
-type Mensa interface{}
-
-type mensa struct {
-}
-
-var singleton *mensa
-
 // datum;tag;warengruppe;name;kennz;preis;stud;bed;gast
 type food struct {
 	Date    string `json:"date"`
@@ -29,36 +22,13 @@ type food struct {
 	Student string `json:"student"`
 }
 
-var mapTimeWeekdayToDay = map[string]string{
-	"Monday":    "Mo",
-	"Tuesday":   "Di",
-	"Wednesday": "Mi",
-	"Thursday":  "Do",
-	"Friday":    "Fr",
-	"Saturday":  "Sa",
-	"Sunday":    "So",
+func Init() {
+	fmt.Println("start listening mensa")
+	http.HandleFunc("/mensa/today/main", onContentRequestMain)
+	http.HandleFunc("/mensa/today/side", onContentRequestSide)
 }
 
-func New() (Mensa, error) {
-	if singleton != nil {
-		return singleton, nil
-	}
-
-	singleton = &mensa{}
-
-	go func() {
-		fmt.Println("start listening mensa")
-		http.HandleFunc("/mensa/today/main", singleton.onContentRequestMain)
-		http.HandleFunc("/mensa/today/side", singleton.onContentRequestSide)
-		err := http.ListenAndServe(":8123", nil)
-		if err != nil {
-			fmt.Println(err)
-		}
-	}()
-	return singleton, nil
-}
-
-func (m *mensa) onContentRequestMain(w http.ResponseWriter, r *http.Request) {
+func onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	enableCors(&w)
 	_, week := time.Now().UTC().ISOWeek()
@@ -105,11 +75,15 @@ func (m *mensa) onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 	}
 
-	w.Write(jsonFoods)
+	_, err = w.Write(jsonFoods)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	fmt.Println("data send")
 }
 
-func (m *mensa) onContentRequestSide(w http.ResponseWriter, r *http.Request) {
+func onContentRequestSide(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	enableCors(&w)
 	_, week := time.Now().UTC().ISOWeek()
@@ -156,7 +130,11 @@ func (m *mensa) onContentRequestSide(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 	}
 
-	w.Write(jsonFoods)
+	_, err = w.Write(jsonFoods)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	fmt.Println("data send")
 }
 

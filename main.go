@@ -4,32 +4,35 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	datamanager "main/internal/dataManager"
 	"main/internal/mensa"
 	"main/internal/rvv"
+	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 )
 
-type Server struct {
-	mensa mensa.Mensa
-	rvv   rvv.Rvv
-}
-
 func main() {
-	_, err := mensa.New()
+	mensa.Init()
+	rvv.Init()
+	err := datamanager.Init()
 	if err != nil {
 		fmt.Println(err)
+		os.Exit(1)
 	}
-
-	_, err = rvv.New()
+	err = http.ListenAndServe(":8123", nil)
 	if err != nil {
 		fmt.Println(err)
+		os.Exit(1)
 	}
 
 	shutdownCtx, shutdown := context.WithCancel(context.Background())
 	defer shutdown()
 	err = waitForInterrupt(shutdownCtx)
+	if err != nil {
+		fmt.Println(err)
+	}
 }
 
 func waitForInterrupt(ctx context.Context) error {
