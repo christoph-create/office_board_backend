@@ -27,6 +27,10 @@ type GitAccident struct {
 	Time time.Time
 }
 
+type TimeSince struct {
+	Seconds uint
+}
+
 func Init() error {
 	err := initDB()
 	if err != nil {
@@ -37,6 +41,9 @@ func Init() error {
 
 	http.HandleFunc("/score/update", updateScore)
 	http.HandleFunc("/score/load", loadScores)
+
+	http.HandleFunc("/accident/load", loadLastAccident)
+	http.HandleFunc("/accident/reset", resetAccident)
 
 	return nil
 }
@@ -104,6 +111,32 @@ func loadScores(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 		return
 	}
+}
+
+func loadLastAccident(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+
+	var accident GitAccident
+
+	dataBase.Last(&accident)
+	seconds := uint(time.Since(accident.Time).Seconds())
+
+	secondsJson, err := json.Marshal(&TimeSince{Seconds: seconds})
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	_, err = w.Write(secondsJson)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+}
+
+func resetAccident(w http.ResponseWriter, r *http.Request) {
+	enableCors(&w)
+
+	dataBase.Save(&GitAccident{Time: time.Now()})
 }
 
 func enableCors(w *http.ResponseWriter) {
