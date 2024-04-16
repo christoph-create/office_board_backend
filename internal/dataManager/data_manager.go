@@ -36,8 +36,6 @@ func Init() error {
 	if err != nil {
 		return err
 	}
-	// TODO remove when create entry is implemeted
-	fill()
 
 	http.HandleFunc("/score/update", updateScore)
 	http.HandleFunc("/score/load", loadScores)
@@ -66,14 +64,6 @@ func initDB() error {
 	}
 
 	return err
-}
-
-func fill() {
-	dataBase.Save(&ScoreEntry{"1", "Peter", 2, 1, 3})
-	dataBase.Save(&ScoreEntry{"2", "Golo", 2, 1, 11})
-	dataBase.Save(&ScoreEntry{"3", "Michi G", 2, 1, 9})
-	dataBase.Save(&ScoreEntry{"4", "Silvio", 0, 0, 5})
-	dataBase.Save(&ScoreEntry{"5", "Christoph", 1, 2, 11})
 }
 
 func updateScore(w http.ResponseWriter, r *http.Request) {

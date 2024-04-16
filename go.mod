@@ -3,7 +3,6 @@ module main
 go 1.18
 
 require (
-	golang.org/x/text v0.14.0
 	gorm.io/driver/sqlite v1.5.4
 	gorm.io/gorm v1.25.6
 )
