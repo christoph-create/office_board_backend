@@ -3,38 +3,17 @@ package rvv
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"time"
 )
 
-type Rvv interface{}
+var client *http.Client
 
-type rvv struct {
-	client *http.Client
-}
-
-var singleton *rvv
-
-func New() (Rvv, error) {
-	if singleton != nil {
-		return singleton, nil
-	}
-
-	singleton = &rvv{
-		client: &http.Client{},
-	}
-
-	go func() {
-		fmt.Println("start listening rvv")
-		http.HandleFunc("/rvv/techcampus", singleton.fetchSchedule)
-		err := http.ListenAndServe(":8124", nil)
-		if err != nil {
-			fmt.Println(err)
-		}
-	}()
-
-	return singleton, nil
+func Init() {
+	client = &http.Client{}
+	fmt.Println("start listening rvv")
+	http.HandleFunc("/rvv/techcampus", fetchSchedule)
 }
 
 type Departure struct {
@@ -66,7 +45,7 @@ type DepartureJson struct {
 	TimePlus  string `json:"timePlus"`
 }
 
-func (rv *rvv) fetchSchedule(w http.ResponseWriter, r *http.Request) {
+func fetchSchedule(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("start rvv")
 
 	w.Header().Set("Content-Type", "application/json")
@@ -99,7 +78,7 @@ func (rv *rvv) fetchSchedule(w http.ResponseWriter, r *http.Request) {
 	}
 	req.URL.RawQuery = q.Encode()
 
-	res, err := rv.client.Do(req)
+	res, err := client.Do(req)
 	if err != nil {
 		fmt.Println("failed to perform HTTP request: %w", err)
 		return
@@ -111,7 +90,7 @@ func (rv *rvv) fetchSchedule(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	body, err := ioutil.ReadAll(res.Body)
+	body, err := io.ReadAll(res.Body)
 	if err != nil {
 		fmt.Println("failed to read response body: %w", err)
 		return
@@ -175,7 +154,11 @@ func (rv *rvv) fetchSchedule(w http.ResponseWriter, r *http.Request) {
 		fmt.Println(err)
 	}
 
-	w.Write(jsonDeparture)
+	_, err = w.Write(jsonDeparture)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 	fmt.Println("data send rvv")
 }
 
