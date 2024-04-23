@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"time"
 )
 
 type Food struct {
@@ -28,14 +27,20 @@ const (
 
 func Init() {
 	fmt.Println("start listening mensa")
-	http.HandleFunc("/mensa/today/main", onContentRequestMain)
-	http.HandleFunc("/mensa/today/side", onContentRequestSide)
+	http.HandleFunc("/mensa/main", onContentRequestMain)
+	http.HandleFunc("/mensa/side", onContentRequestSide)
 }
 
 func onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
+	date := r.URL.Query().Get("date")
+	if date == "" {
+		http.Error(w, "Date parameter is missing", http.StatusBadRequest)
+		return
+	}
+
 	enableCors(&w)
-	data, err := getFood(mainDish)
+	data, err := getFood(mainDish, date)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -49,8 +54,14 @@ func onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 
 func onContentRequestSide(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
+	date := r.URL.Query().Get("date")
+	if date == "" {
+		http.Error(w, "Date parameter is missing", http.StatusBadRequest)
+		return
+	}
+
 	enableCors(&w)
-	data, err := getFood(sideDish)
+	data, err := getFood(sideDish, date)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -66,9 +77,8 @@ func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 }
 
-func getFood(category string) ([]byte, error) {
-	day := time.Now().Format("2006-01-02")
-	resp, err := http.Get(fmt.Sprintf("https://openmensa.org/api/v2/canteens/195/days/%s/meals", day))
+func getFood(category string, date string) ([]byte, error) {
+	resp, err := http.Get(fmt.Sprintf("https://openmensa.org/api/v2/canteens/195/days/%s/meals", date))
 	if err != nil {
 		return nil, err
 	}
