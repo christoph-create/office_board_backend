@@ -1,26 +1,30 @@
 package mensa
 
 import (
-	"bufio"
 	"encoding/json"
 	"fmt"
 	"net/http"
-	"strings"
 	"time"
-
-	"golang.org/x/text/encoding/charmap"
-	"golang.org/x/text/transform"
 )
 
-// datum;tag;warengruppe;name;kennz;preis;stud;bed;gast
-type food struct {
-	Date    string `json:"date"`
-	Day     string `json:"day"`
-	Group   string `json:"group"`
-	Id      string `json:"id"`
-	Name    string `json:"name"`
-	Student string `json:"student"`
+type Food struct {
+	ID       int      `json:"id"`
+	Name     string   `json:"name"`
+	Category string   `json:"category"`
+	Prices   Prices   `json:"prices"`
+	Notes    []string `json:"notes"`
 }
+
+type Prices struct {
+	Students float32 `json:"students"`
+}
+
+const (
+	mainDish string = "Hauptgerichte"
+	sideDish string = "Beilagen"
+	soup     string = "Suppe"
+	dessert  string = "Nachspeisen"
+)
 
 func Init() {
 	fmt.Println("start listening mensa")
@@ -31,51 +35,11 @@ func Init() {
 func onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	enableCors(&w)
-	_, week := time.Now().UTC().ISOWeek()
-	resp, err := http.Get(fmt.Sprintf("http://www.stwno.de/infomax/daten-extern/csv/HS-R-tag/%v.csv", week))
+	data, err := getFood(mainDish)
 	if err != nil {
 		fmt.Println(err)
 	}
-	defer resp.Body.Close()
-
-	fullDataSet := []food{}
-
-	dec := transform.NewReader(resp.Body, charmap.ISO8859_1.NewDecoder())
-
-	scanner := bufio.NewScanner(dec)
-	for scanner.Scan() {
-		tmp := strings.Split(scanner.Text(), ";")
-		fullDataSet = append(fullDataSet, food{
-			Date:    tmp[0],
-			Group:   tmp[2],
-			Name:    strings.Split(tmp[3], "(")[0],
-			Id:      tmp[4],
-			Student: tmp[6],
-		})
-	}
-
-	fullDataSet = fullDataSet[1:]
-
-	// filter data
-	dataTodayMain := []food{}
-
-	dateToday := time.Now().Format("02.01.2006")
-
-	// TODO: remove
-	// dateToday = "30.01.2024"
-
-	for _, f := range fullDataSet {
-		if f.Date == dateToday && strings.Contains(f.Group, "H") {
-			dataTodayMain = append(dataTodayMain, f)
-		}
-	}
-
-	jsonFoods, err := json.Marshal(dataTodayMain)
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	_, err = w.Write(jsonFoods)
+	_, err = w.Write(data)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -86,51 +50,11 @@ func onContentRequestMain(w http.ResponseWriter, r *http.Request) {
 func onContentRequestSide(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	enableCors(&w)
-	_, week := time.Now().UTC().ISOWeek()
-	resp, err := http.Get(fmt.Sprintf("http://www.stwno.de/infomax/daten-extern/csv/HS-R-tag/%v.csv", week))
+	data, err := getFood(sideDish)
 	if err != nil {
 		fmt.Println(err)
 	}
-	defer resp.Body.Close()
-
-	fullDataSet := []food{}
-
-	dec := transform.NewReader(resp.Body, charmap.ISO8859_1.NewDecoder())
-
-	scanner := bufio.NewScanner(dec)
-	for scanner.Scan() {
-		tmp := strings.Split(scanner.Text(), ";")
-		fullDataSet = append(fullDataSet, food{
-			Date:    tmp[0],
-			Group:   tmp[2],
-			Name:    strings.Split(tmp[3], "(")[0],
-			Id:      tmp[4],
-			Student: tmp[6],
-		})
-	}
-
-	fullDataSet = fullDataSet[1:]
-
-	// filter data
-	dataTodaySide := []food{}
-
-	dateToday := time.Now().Format("02.01.2006")
-
-	// TODO: remove
-	// dateToday = "26.01.2024"
-
-	for _, f := range fullDataSet {
-		if f.Date == dateToday && strings.Contains(f.Group, "B") {
-			dataTodaySide = append(dataTodaySide, f)
-		}
-	}
-
-	jsonFoods, err := json.Marshal(dataTodaySide)
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	_, err = w.Write(jsonFoods)
+	_, err = w.Write(data)
 	if err != nil {
 		fmt.Println(err)
 		return
@@ -140,4 +64,31 @@ func onContentRequestSide(w http.ResponseWriter, r *http.Request) {
 
 func enableCors(w *http.ResponseWriter) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
+}
+
+func getFood(category string) ([]byte, error) {
+	day := time.Now().Format("2006-01-02")
+	resp, err := http.Get(fmt.Sprintf("https://openmensa.org/api/v2/canteens/195/days/%s/meals", day))
+	if err != nil {
+		return nil, err
+	}
+	defer resp.Body.Close()
+
+	foodData := &[]Food{}
+	err = json.NewDecoder(resp.Body).Decode(foodData)
+	if err != nil {
+		return nil, err
+	}
+	dishes := []Food{}
+	for _, meal := range *foodData {
+		if meal.Category == category {
+			dishes = append(dishes, meal)
+		}
+	}
+
+	data, err := json.Marshal(dishes)
+	if err != nil {
+		return nil, err
+	}
+	return data, nil
 }
