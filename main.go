@@ -14,9 +14,12 @@ import (
 )
 
 func main() {
-	mensa.Init()
 	rvv.Init()
-	err := datamanager.Init()
+	db, err := datamanager.New()
+	if err != nil {
+		os.Exit(1)
+	}
+	mensa.Init(db)
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
